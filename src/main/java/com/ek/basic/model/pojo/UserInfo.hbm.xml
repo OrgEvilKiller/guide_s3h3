@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-7-13 19:27:21 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ek.basic.model.pojo.UserInfo" table="user_info" catalog="basic_db">
+        <id name="uuid" type="java.lang.Integer">
+            <column name="uuid" />
+            <generator class="identity" />
+        </id>
+        <property name="userName" type="string">
+            <column name="user_name" length="20" />
+        </property>
+        <property name="birthday" type="timestamp">
+            <column name="birthday" length="19" />
+        </property>
+        <property name="sex" type="string">
+            <column name="sex" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>
